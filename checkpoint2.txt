@@ -1,0 +1,72 @@
+ex 1
+
+l=[]
+x = 2002
+for i in range (2002,3201):
+    if i%7 == 0 and i%5 != 0:
+        l.append(i)
+print(l)
+
+
+ex 2
+
+x = int(input("donner un nombre")) 
+a=1
+for i in range (1,x+1):
+    a=a*i
+print(a)
+    
+ex 3
+
+ 
+x = int(input("donnez un nombre"))
+d = {}
+a=1
+for i in range (1,x+1):
+    a=i*i
+    d[i]=a
+print(d)
+
+
+ex 4
+
+
+x = input("write a word : ")
+y = int(input("write a number : "))
+if len(x) <= y:
+     y = int(input("write another number : "))
+print(x.replace(x[y],''))
+
+
+
+ex 5
+
+
+import numpy as np
+a = np.array([[0,1],[2,3],[4,5]])
+print("Original array elements:\n",a)
+l = a.tolist()
+print("Array to list:\n", l)
+
+
+ex 6
+
+import numpy as np
+a = np.array([0,1,2])
+print(a)
+b = np.array([2,1,0])
+print(b)
+np.cov(a,b)
+
+
+ex 7
+
+from math import sqrt
+Q1 = sqrt((2*50*100)/30)
+print(int(Q1))
+Q2 = sqrt((2*50*150)/30)
+print(int(Q2))
+Q3 = sqrt((2*50*180)/30)
+print(int(Q3))
+
+
