@@ -61,12 +61,18 @@ np.cov(a,b)
 
 ex 7
 
+
 from math import sqrt
-Q1 = sqrt((2*50*100)/30)
-print(int(Q1))
-Q2 = sqrt((2*50*150)/30)
-print(int(Q2))
-Q3 = sqrt((2*50*180)/30)
-print(int(Q3))
+c = 50
+h = 30
+d = (input("enter 3 numbers : "))
+x = d.split(",")
+l = []
+for i in x :
+    i = int(i)
+    Q = round(sqrt((2*c*i)/h))
+    l.append(Q)
+print(l)
+
 
 
